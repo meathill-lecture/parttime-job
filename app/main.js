@@ -8,19 +8,19 @@ Reveal.initialize({
   transition: query.transition || 'slide',
   dependencies: [
     {
-      src: './node_modules/reveal.js/plugin/markdown/marked.js',
+      src: BASE_DIR + '/plugin/markdown/marked.js',
       condition: function () {
         return !!document.querySelector('[data-markdown]');
       }
     },
     {
-      src: './node_modules/reveal.js/plugin/markdown/markdown.js',
+      src: BASE_DIR + '/plugin/markdown/markdown.js',
       condition: function () {
         return !!document.querySelector('[data-markdown]');
       }
     },
     {
-      src: './node_modules/reveal.js/plugin/highlight/highlight.js',
+      src: BASE_DIR + '/plugin/highlight/highlight.js',
       async: true,
       callback: function () {
         hljs.initHighlightingOnLoad();
@@ -30,7 +30,7 @@ Reveal.initialize({
 });
 
 if (query.print) {
-  load('./node_modules/reveal.js/css/print/pdf.css');
+  load(BASE_DIR + '/css/print/pdf.css');
 }
 
 if (query.platform) {

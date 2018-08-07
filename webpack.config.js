@@ -3,8 +3,11 @@
  */
 
 const path = require('path');
+const webpack = require('webpack');
+const dev = require('./config/dev');
 
 module.exports = {
+  mode: 'development',
   context: path.resolve(__dirname, './app'),
   entry: {
     'main': './main.js'
@@ -14,18 +17,16 @@ module.exports = {
     filename: "[name].js"
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        use: 'babel-loader'
       }
     ]
   },
   devtool: 'source-map',
-  watch: true,
-  watchOptions: {
-    poll: 1000,
-    ignored: /node_modules|styl|docs|css|img/
-  }
+  plugins: [
+    new webpack.DefinePlugin(dev),
+  ]
 };

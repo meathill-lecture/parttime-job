@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node live-server.js",
     "watch:stylus": "mkdir css & stylus -m -w styl/screen.styl -o css/",
-    "webpack": "webpack"
+    "build": "gulp & webpack --config ./webpack.config.prod.js"
   },
   "author": {
     "name": "Meathill",
@@ -22,16 +22,22 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-stylus": "^2.7.0",
     "marked": "^0.4.0",
-    "reveal-markdown-compiler": "^2.2.2",
-    "webpack": "^4.16.4"
+    "reveal-markdown-compiler": "^2.2.1",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
   },
   "dependencies": {
-    "del": "^3.0.0",
     "font-awesome": "^4.7.0",
+    "gulp-clean-css": "^3.9.4",
     "highlight.js": "^9.12.0",
     "meathill-reveal-theme": "^0.2.2",
-    "reveal.js": "^3.6.0"
+    "reveal.js": "^3.7.0"
   },
   "optionalDependencies": {
     "live-server": "^1.2.0"
