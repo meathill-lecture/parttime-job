@@ -1,6 +1,6 @@
 <!--
 title: 一起挣外快吧
-description: 环境搭建+万能的WP+前端如何玩转WP
+description: 环境搭建+万能的WP+前端玩转WP
 -->
 
 一起挣外快吧
@@ -52,11 +52,31 @@ description: 环境搭建+万能的WP+前端如何玩转WP
 
 [使用 Windows Linux Subsystem 配置开发环境](https://blog.meathill.com/tech/setup-windows-subsystem-linux-for-php.html)
 
+<!-- section -->
+
+### Windows Subsystem Linux
+
+vs 虚拟机/懒人包：
+
+1. 直接使用本机资源
+2. 节省系统资源
+3. 纯正的 Linux 版本
+4. 缺点：存在有一些 bug
+
 <!-- page -->
 
 ## 配置线上服务器
 
 [Ubuntu 16.04 搭建 LNMP 开发环境](https://blog.meathill.com/tech/serverside/setting-lnmp-on-ubuntu-16-04.html)
+
+<!-- section -->
+
+### LNMP
+
+* Linux
+* Nginx
+* MySQL
+* PHP
 
 <!-- page -->
 
@@ -66,9 +86,23 @@ description: 环境搭建+万能的WP+前端如何玩转WP
 
 ## 安装 WordPress
 
+<!-- section -->
+
+用户数量巨大
+
+* 生态完整
+* 插件功能丰富
+* 安全性能良好
+* 解决基础 CMS 需求
+
 <!-- page -->
 
 ## 开发 WordPress 主题
+
+<!-- section -->
+
+1. 满足 CMS 需要
+2. 选择熟悉的知识栈
 
 <!-- page -->
 
@@ -113,7 +147,7 @@ Note:
 
 <!-- section -->
 
-### 5. 处理请求
+### 5. 服务器处理请求
 
 1. 读取缓存
 2. 读取数据库
@@ -126,7 +160,7 @@ Note:
 
 1. 边下载边解析边渲染
 2. 加载完 `<head>` 里的样式开始渲染
-3. 提升首屏加载速度
+3. 同一域名最多发起3个连接
 
 <!-- section -->
 
@@ -185,7 +219,8 @@ Note:
 
 1. Tree shaking
 2. SSR
-3. 按需加载模块
+3. `<script defer>` 和 `<script async>`
+4. 按需加载模块
 
 <!-- section -->
 
@@ -232,7 +267,16 @@ Note:
 
 <!-- page -->
 
-## 自由工作真的好么？
+## 一些概念
+
+1. 自由职业
+2. 远程工作
+3. 独立开发者
+4. 全职/兼职
+
+<!-- page -->
+
+## 自由职业真的好么？
 
 答案：不好
 
@@ -250,11 +294,15 @@ Note:
 
 <!-- section -->
 
+#### 谈项目期
+
 > 2w？你这个报价太高了，我问了别的朋友，他说1w就能做下来。
 
 > 我不是说你报价太高哈，我是想知道这里面都有哪些内容，是不是有一些我暂时不需要的，能不能先不做？
 
 <!-- section -->
+
+#### 项目执行期
 
 > 哎，你看，这个功能也不错，给我加上呗。
 
@@ -264,11 +312,30 @@ Note:
 
 <!-- section -->
 
+#### 项目交付后
+
 我：“这里应该这样，那里应该那样，你需要有N个人做A，M个人做B……”
 
 甲方：好（但没真的做）
 
 三个月后，项目黄了……
+
+<!-- section -->
+
+### 总结
+
+1. 很难遇到认同技术价值的老板
+2. 很难遇到理解产品研发的老板
+3. 很难遇到会经营公司的老板
+
+<!-- page -->
+
+### 注意事项
+
+1. 不要离开大城市
+2. 要有长期计划，比如独立项目
+3. 要有养老计划
+4. 要注意积累
 
 <!-- page -->
 

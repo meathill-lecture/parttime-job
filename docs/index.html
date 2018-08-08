@@ -1,1 +1,133 @@
-<!DOCTYPE html><html lang="zh-cmn-Hans"><head><meta charset="UTF-8"><title>partime-job</title><meta name="keywords" content=""><meta name="description" content=""><meta name="author" content="Meathill <meathill@gmail.com>"><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/moon.min.css"><link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css"><link rel="stylesheet" href="http://static.meathill.com/reveal-theme/css/meathill-reveal-theme.min.css"><link href="//fonts.lug.ustc.edu.cn/css?family=Source+Code+Pro" rel="stylesheet"><link rel="stylesheet" href="./css/screen.css"></head><body><div class="reveal"><div class="slides"><section><h1 id="-">一起挣外快吧</h1><h4 id="-meathill"><a href="https://weibo.com/meathill/">@meathill</a></h4></section><section><section><h2>关于作者</h2></section><section><p><img class="author-avatar" src="http://qiniu.meathill.com/wp-content/uploads/2016/07/20160607_005422423_iOS-825x510.jpg" height="400"></p><p>大家好，我是翟路佳。全栈工程师，编程爱好者，喜欢分享。</p></section><section><p>我今年的目标是做一名兴趣使然的分享者，多出内容，帮助尽可能多的同学获得进步。</p><p>我经常出没于：</p><ul><li><a href="https://blog.meathill.com/">博客：https://blog.meathill.com/</a></li><li><a href="https://weibo.com/meathill">微博：https://weibo.com/meathill/</a></li><li><a href="https://sf.gg/u/meathill">SF：https://sf.gg/u/meathill</a></li></ul></section><section><h4>其它分享</h4><p><a href="https://github.com/meathill-lecture">https://github.com/meathill-lecture</a></p></section></section><section><h2 id="-">教学目标</h2><ol><li>学会服务器环境配置</li><li>学会搭建 WordPress</li><li>学会 WP 主题开发</li><li>理解浏览器工作原理</li><li>可以接私活儿</li></ol></section><section><section><h2 id="-">课程大纲</h2><p>本次直播采用穿插讲解知识点的方式，请大家做好笔记。</p></section><section><ol><li>配置 Windows 10 开发环境</li><li>配置线上服务器</li><li>启动静态网页服务</li><li>安装 WordPress</li><li>开发 WordPress 主题</li></ol></section><section><h3 id="-">各种知识</h3><ol><li>浏览器的工作机制</li><li>常见优化策略</li><li>各种云工具释义</li><li>自由工作真的好么？</li><li>请谨慎接私活</li></ol></section></section><section><h2 id="-windows-10-">配置 Windows 10 开发环境</h2><p><a href="https://blog.meathill.com/tech/setup-windows-subsystem-linux-for-php.html">使用 Windows Linux Subsystem 配置开发环境</a></p></section><section><h2 id="-">配置线上服务器</h2><p><a href="https://blog.meathill.com/tech/serverside/setting-lnmp-on-ubuntu-16-04.html">Ubuntu 16.04 搭建 LNMP 开发环境</a></p></section><section><h2 id="-">启动静态网页服务</h2></section><section><h2 id="-wordpress">安装 WordPress</h2></section><section><h2 id="-wordpress-">开发 WordPress 主题</h2></section><section><h2 id="-">各种知识</h2></section><section><section><h3 id="-">浏览器的工作机制</h3><p>从你输入地址到网页渲染完成，中间经历了什么？</p></section><section><h3 id="1-">1. 浏览器分析地址，解析域名</h3><p>关键词：域名，IP，DNS</p></section><section><h3 id="2-ip-">2. 浏览器包装请求，向 IP 发起</h3><p>关键词：HTTP header</p></section><section><h3 id="3-">3. 通过层层转发，最终到达服务器</h3><p>关键词：网络，traceroute</p></section><section><h3 id="4-">4. 服务器将请求转发给处理程序</h3><p>关键词：nginx/apache，php-fpm，node.js</p></section><section><h3 id="5-">5. 处理请求</h3><ol><li>读取缓存</li><li>读取数据库</li><li>生成响应体</li><li>输出响应体</li></ol></section><section><h3 id="6-">6. 浏览器下载响应体</h3><ol><li>边下载边解析边渲染</li><li>加载完 <code></code> 里的样式开始渲染</li><li>提升首屏加载速度</li></ol></section><section><h3 id="7-js-">7. 执行 JS 加载更多内容</h3><p>关键词：单页应用（SPA），路由</p></section></section><section><section><h2 id="-">常见优化策略</h2></section><section><h3 id="-">提前加载</h3><ol><li>域名预解析</li><li>页面预加载</li><li>页面预渲染</li><li>主动缓存</li></ol></section><section><h3 id="-">缓存</h3><ol><li>静态资源缓存</li><li>数据缓存</li><li>处理好过期时间</li></ol></section><section><h3 id="-">减少请求数量</h3><ol><li>CSS sprite</li><li>使用多个域名</li><li>webpack</li></ol></section><section><h3 id="-">减少网络层级</h3><ol><li>CDN</li><li>部署本地机房</li></ol></section><section><h3 id="-php-">减少 PHP 运行时间</h3><ol><li>减少加载时间</li><li>减少磁盘 io</li><li>使用数据缓存</li><li>负载均衡</li></ol></section><section><h3 id="-js-">减少 JS 运行时间</h3><ol><li>Tree shaking</li><li>SSR</li><li>按需加载模块</li></ol></section><section><h3 id="-">提高首屏打开速度</h3><ol><li>必要的样式放在 <code></code></li><li>使用 lazyload</li></ol></section></section><section><h2 id="-">常用优化工具</h2><ol><li><a href="https://github.com/GoogleChrome/lighthouse">lighthouse</a></li><li>Chrome 开发者工具</li></ol></section><section><section><h2 id="-">云工具释义</h2></section><section><h3 id="cdn">CDN</h3><ul><li>Content Delivery Network</li><li>内容分发网络</li><li>主要用于分发静态资源，亦可分发动态数据</li><li>多地部署，提高加载速度</li></ul></section><section><h3 id="-">云存储</h3></section><section><h3 id="-">云数据库</h3></section><section><h3 id="-">负载均衡</h3></section><section><h3 id="im">IM</h3></section></section><section><section><h2 id="-">自由工作真的好么？</h2><p>答案：不好</p></section><section><ol><li>没有社保</li><li>无法保证工作量</li><li>无法保证收入</li><li>缺少延续性</li><li>收入总量低</li></ol></section></section><section><section><h3 id="-">常见的流程</h3></section><section><blockquote><p>2w？你这个报价太高了，我问了别的朋友，他说1w就能做下来。</p></blockquote><blockquote><p>我不是说你报价太高哈，我是想知道这里面都有哪些内容，是不是有一些我暂时不需要的，能不能先不做？</p></blockquote></section><section><blockquote><p>哎，你看，这个功能也不错，给我加上呗。</p></blockquote><blockquote><p>我觉得要不用这个设计吧。</p></blockquote><blockquote><p>那啥，先不着急开工，我这边情况有些变化……</p></blockquote></section><section><p>我：“这里应该这样，那里应该那样，你需要有N个人做A，M个人做B……”</p><p>甲方：好（但没真的做）</p><p>三个月后，项目黄了……</p></section></section><section><section><h2 id="-">接私活一定要谨慎</h2><h2 id="-">接私活一定要谨慎</h2><h2 id="-">接私活一定要谨慎</h2></section><section><h3 id="1-">1. 正职工作绝对优先</h3><ol><li>主要收入来源</li><li>跟公司一起成长的机会</li><li>简历的说服力</li></ol></section><section><h3 id="2-">2. 要能提升自己的能力</h3><ol><li>宁可做不挣钱的 side project</li><li>尝试工作中需要但不太接触到的技术</li><li>使用新技术提升效率</li></ol></section><section><h3 id="3-">3. 积累成功案例</h3><ol><li>比如做网站……</li><li>结成松散的联盟</li><li>勤总结勤归纳记笔记</li></ol></section><section><h3 id="4-">4. 要有合适的财务回报</h3><ol><li>不理解技术价值的老板多半是坑</li><li>日薪x1.25为宜</li><li>商量好付费方式，比如 442</li><li>可能要考虑税点</li></ol></section></section><section><p>Q&A</p></section><section><p>参考阅读：</p><ul><li><a href="https://blog.meathill.com/career/good-and-bad-parts-of-freelance.html">自由职业的利与弊</a></li><li><a href="https://blog.meathill.com/tech/setup-windows-subsystem-linux-for-php.html">使用 Windows Linux Subsystem 配置开发环境</a> <a href="https://blog.meathill.com/tech/serverside/setting-lnmp-on-ubuntu-16-04.html">Ubuntu 16.04 搭建 LNMP 开发环境</a></li></ul></section></div></div><aside id="sf-aside" class="reveal-aside"><h2>partime-job</h2><div class="qrcodes"><h4>观看幻灯片</h4><p><img src="./img/slide.gif" class="qrcode"></p><h4>进入 SF 讲堂</h4><p><img src="./img/sf.gif" class="qrcode"></p></div><ul><li><a href="http://weibo.com/meathill">我的微博</a></li><li><a href="http://blog.meathill.com/">我的博客</a></li><li><a href="https://segmentfault.com/u/meathill">我的 SegmentFault</a></li></ul></aside><script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script><script src="./js/main.js"></script></body></html>
+<!DOCTYPE html><html lang="zh-cmn-Hans"><head><meta charset="UTF-8"><title>partime-job</title><meta name="keywords" content=""><meta name="description" content=""><meta name="author" content="Meathill <meathill@gmail.com>"><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/moon.min.css"><link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css"><link rel="stylesheet" href="http://static.meathill.com/reveal-theme/css/meathill-reveal-theme.min.css"><link href="//fonts.lug.ustc.edu.cn/css?family=Source+Code+Pro" rel="stylesheet"><link rel="stylesheet" href="./css/screen.css"></head><body><div class="reveal"><div class="slides"><section><h1 id="-">一起挣外快吧</h1><h4 id="-meathill"><a href="https://weibo.com/meathill/">@meathill</a></h4></section><section><section><h2>关于作者</h2></section><section><p><img class="author-avatar" src="http://qiniu.meathill.com/wp-content/uploads/2016/07/20160607_005422423_iOS-825x510.jpg" height="400"></p><p>大家好，我是翟路佳。全栈工程师，编程爱好者，喜欢分享。</p></section><section><p>我今年的目标是做一名兴趣使然的分享者，多出内容，帮助尽可能多的同学获得进步。</p><p>我经常出没于：</p><ul><li><a href="https://blog.meathill.com/">博客：https://blog.meathill.com/</a></li><li><a href="https://weibo.com/meathill">微博：https://weibo.com/meathill/</a></li><li><a href="https://sf.gg/u/meathill">SF：https://sf.gg/u/meathill</a></li></ul></section><section><h4>其它分享</h4><p><a href="https://github.com/meathill-lecture">https://github.com/meathill-lecture</a></p></section></section><section><h2 id="-">教学目标</h2><ol><li>学会服务器环境配置</li><li>学会搭建 WordPress</li><li>学会 WP 主题开发</li><li>理解浏览器工作原理</li><li>可以接私活儿</li></ol></section><section><section><h2 id="-">课程大纲</h2><p>本次直播采用穿插讲解知识点的方式，请大家做好笔记。</p></section><section><ol><li>配置 Windows 10 开发环境</li><li>配置线上服务器</li><li>启动静态网页服务</li><li>安装 WordPress</li><li>开发 WordPress 主题</li></ol></section><section><h3 id="-">各种知识</h3><ol><li>浏览器的工作机制</li><li>常见优化策略</li><li>各种云工具释义</li><li>自由工作真的好么？</li><li>请谨慎接私活</li></ol></section></section><section><section><h2 id="-windows-10-">配置 Windows 10 开发环境</h2><p><a href="https://blog.meathill.com/tech/setup-windows-subsystem-linux-for-php.html">使用 Windows Linux Subsystem 配置开发环境</a></p></section><section><h3 id="windows-subsystem-linux">Windows Subsystem Linux</h3><p>vs 虚拟机/懒人包：</p><ol><li>直接使用本机资源</li><li>节省系统资源</li><li>纯正的 Linux 版本</li><li>缺点：存在有一些 bug</li></ol></section></section><section><section><h2 id="-">配置线上服务器</h2><p><a href="https://blog.meathill.com/tech/serverside/setting-lnmp-on-ubuntu-16-04.html">Ubuntu 16.04 搭建 LNMP 开发环境</a></p></section><section><h3 id="lnmp">LNMP</h3><ul><li>Linux</li><li>Nginx</li><li>MySQL</li><li>PHP</li></ul></section></section><section><h2 id="-">启动静态网页服务</h2></section><section><section><h2 id="-wordpress">安装 WordPress</h2></section><section><p>用户数量巨大</p><ul><li>生态完整</li><li>插件功能丰富</li><li>安全性能良好</li><li>解决基础 CMS 需求</li></ul></section></section><section><section><h2 id="-wordpress-">开发 WordPress 主题</h2></section><section><ol><li>满足 CMS 需要</li><li>选择熟悉的知识栈</li></ol></section></section><section><h2 id="-">各种知识</h2></section><section><section><h3 id="-">浏览器的工作机制</h3><p>从你输入地址到网页渲染完成，中间经历了什么？</p></section><section><h3 id="1-">1. 浏览器分析地址，解析域名</h3><p>关键词：域名，IP，DNS</p></section><section><h3 id="2-ip-">2. 浏览器包装请求，向 IP 发起</h3><p>关键词：HTTP header</p></section><section><h3 id="3-">3. 通过层层转发，最终到达服务器</h3><p>关键词：网络，traceroute</p></section><section><h3 id="4-">4. 服务器将请求转发给处理程序</h3><p>关键词：nginx/apache，php-fpm，node.js</p></section><section><h3 id="5-">5. 服务器处理请求</h3><ol><li>读取缓存</li><li>读取数据库</li><li>生成响应体</li><li>输出响应体</li></ol></section><section><h3 id="6-">6. 浏览器下载响应体</h3><ol><li>边下载边解析边渲染</li><li>加载完 <code></code> 里的样式开始渲染</li><li>同一域名最多发起3个连接</li></ol></section><section><h3 id="7-js-">7. 执行 JS 加载更多内容</h3><p>关键词：单页应用（SPA），路由</p></section></section><section><section><h2 id="-">常见优化策略</h2></section><section><h3 id="-">提前加载</h3><ol><li>域名预解析</li><li>页面预加载</li><li>页面预渲染</li><li>主动缓存</li></ol></section><section><h3 id="-">缓存</h3><ol><li>静态资源缓存</li><li>数据缓存</li><li>处理好过期时间</li></ol></section><section><h3 id="-">减少请求数量</h3><ol><li>CSS sprite</li><li>使用多个域名</li><li>webpack</li></ol></section><section><h3 id="-">减少网络层级</h3><ol><li>CDN</li><li>部署本地机房</li></ol></section><section><h3 id="-php-">减少 PHP 运行时间</h3><ol><li>减少加载时间</li><li>减少磁盘 io</li><li>使用数据缓存</li><li>负载均衡</li></ol></section><section><h3 id="-js-">减少 JS 运行时间</h3><ol><li>Tree shaking</li><li>SSR</li><li><code><script defer="defer"></code> 和 <code><script async></code></li>
+<li>按需加载模块</li>
+</ol>
+</section><section><h3 id="-">提高首屏打开速度</h3>
+<ol>
+<li>必要的样式放在 <code><head></code></li>
+<li>使用 lazyload</li>
+</ol>
+</section></section><section><h2 id="-">常用优化工具</h2>
+<ol>
+<li><a href="https://github.com/GoogleChrome/lighthouse">lighthouse</a></li>
+<li>Chrome 开发者工具</li>
+</ol>
+</section><section><section><h2 id="-">云工具释义</h2>
+</section><section><h3 id="cdn">CDN</h3>
+<ul>
+<li>Content Delivery Network</li>
+<li>内容分发网络</li>
+<li>主要用于分发静态资源，亦可分发动态数据</li>
+<li>多地部署，提高加载速度</li>
+</ul>
+</section><section><h3 id="-">云存储</h3>
+</section><section><h3 id="-">云数据库</h3>
+</section><section><h3 id="-">负载均衡</h3>
+</section><section><h3 id="im">IM</h3>
+</section></section><section><h2 id="-">一些概念</h2>
+<ol>
+<li>自由职业</li>
+<li>远程工作</li>
+<li>独立开发者</li>
+<li>全职/兼职</li>
+</ol>
+</section><section><section><h2 id="-">自由职业真的好么？</h2>
+<p>答案：不好</p>
+</section><section><ol>
+<li>没有社保</li>
+<li>无法保证工作量</li>
+<li>无法保证收入</li>
+<li>缺少延续性</li>
+<li>收入总量低</li>
+</ol>
+</section></section><section><section><h3 id="-">常见的流程</h3>
+</section><section><h4 id="-">谈项目期</h4>
+<blockquote>
+<p>2w？你这个报价太高了，我问了别的朋友，他说1w就能做下来。</p>
+</blockquote>
+<blockquote>
+<p>我不是说你报价太高哈，我是想知道这里面都有哪些内容，是不是有一些我暂时不需要的，能不能先不做？</p>
+</blockquote>
+</section><section><h4 id="-">项目执行期</h4>
+<blockquote>
+<p>哎，你看，这个功能也不错，给我加上呗。</p>
+</blockquote>
+<blockquote>
+<p>我觉得要不用这个设计吧。</p>
+</blockquote>
+<blockquote>
+<p>那啥，先不着急开工，我这边情况有些变化……</p>
+</blockquote>
+</section><section><h4 id="-">项目交付后</h4>
+<p>我：“这里应该这样，那里应该那样，你需要有N个人做A，M个人做B……”</p>
+<p>甲方：好（但没真的做）</p>
+<p>三个月后，项目黄了……</p>
+</section><section><h3 id="-">总结</h3>
+<ol>
+<li>很难遇到认同技术价值的老板</li>
+<li>很难遇到理解产品研发的老板</li>
+<li>很难遇到会经营公司的老板</li>
+</ol>
+</section></section><section><h3 id="-">注意事项</h3>
+<ol>
+<li>不要离开大城市</li>
+<li>要有长期计划，比如独立项目</li>
+<li>要有养老计划</li>
+<li>要注意积累</li>
+</ol>
+</section><section><section><h2 id="-">接私活一定要谨慎</h2>
+<h2 id="-">接私活一定要谨慎</h2>
+<h2 id="-">接私活一定要谨慎</h2>
+</section><section><h3 id="1-">1. 正职工作绝对优先</h3>
+<ol>
+<li>主要收入来源</li>
+<li>跟公司一起成长的机会</li>
+<li>简历的说服力</li>
+</ol>
+</section><section><h3 id="2-">2. 要能提升自己的能力</h3>
+<ol>
+<li>宁可做不挣钱的 side project</li>
+<li>尝试工作中需要但不太接触到的技术</li>
+<li>使用新技术提升效率</li>
+</ol>
+</section><section><h3 id="3-">3. 积累成功案例</h3>
+<ol>
+<li>比如做网站……</li>
+<li>结成松散的联盟</li>
+<li>勤总结勤归纳记笔记</li>
+</ol>
+</section><section><h3 id="4-">4. 要有合适的财务回报</h3>
+<ol>
+<li>不理解技术价值的老板多半是坑</li>
+<li>日薪x1.25为宜</li>
+<li>商量好付费方式，比如 442</li>
+<li>可能要考虑税点</li>
+</ol>
+</section></section><section><p>Q&A</p>
+</section><section><p>参考阅读：</p>
+<ul>
+<li><a href="https://blog.meathill.com/career/good-and-bad-parts-of-freelance.html">自由职业的利与弊</a></li>
+<li><a href="https://blog.meathill.com/tech/setup-windows-subsystem-linux-for-php.html">使用 Windows Linux Subsystem 配置开发环境</a>
+<a href="https://blog.meathill.com/tech/serverside/setting-lnmp-on-ubuntu-16-04.html">Ubuntu 16.04 搭建 LNMP 开发环境</a></li>
+</ul>
+</section>
+  </div>
+</div>
+<aside id="sf-aside" class="reveal-aside">
+  <h2>partime-job</h2>
+  <div class="qrcodes">
+    <h4>观看幻灯片</h4>
+    <p>
+      <img src="./img/slide.gif" class="qrcode">
+    </p>
+    <h4>进入 SF 讲堂</h4>
+    <p>
+      <img src="./img/sf.gif" class="qrcode">
+    </p>
+  </div>
+  <ul>
+    <li><a href="http://weibo.com/meathill"><i class="fa fa-weibo fa-fw"></i> 我的微博</a></li>
+    <li><a href="http://blog.meathill.com/"><i class="fa fa-rss fa-fw"></i> 我的博客</a></li>
+    <li><a href="https://segmentfault.com/u/meathill">我的 SegmentFault</a></li>
+  </ul>
+</aside>
+<script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script><script src="./js/main.js"></script></code></li></ol></section></section></div></div></body></html>
