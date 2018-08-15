@@ -380,10 +380,39 @@ Note:
 
 Q&A
 
+<!-- section -->
+
+问：接私单的时候要多少钱合适？
+
+答：
+
+1. 先评估工作量
+2. 计算你的日薪（月薪/21.5），乘一个系数
+3. 乘工作量，工作量x2
+
+<!-- section -->
+
+问：我后端技术不太好，怎么办？
+
+答：最好找技术水平好的朋友合作，亦可在平台上找人合作。建议不要自己硬上。
+
+<!-- section -->
+
+问：那我找我同事如何？
+
+答：找同事未必是个好的选择，除非你跟他她关系非常好。
+
+<!-- section -->
+
+问：跟人合作怎么分成？
+
+答：这个要具体人和事具体聊了，每个人的要求和想法都不一样，很难讲。不要担心，谈不拢不合作也行，买卖不成仁义在。
+
 <!-- page -->
 
 参考阅读：
 
 * [自由职业的利与弊](https://blog.meathill.com/career/good-and-bad-parts-of-freelance.html)
 * [使用 Windows Linux Subsystem 配置开发环境](https://blog.meathill.com/tech/setup-windows-subsystem-linux-for-php.html)
-[Ubuntu 16.04 搭建 LNMP 开发环境](https://blog.meathill.com/tech/serverside/setting-lnmp-on-ubuntu-16-04.html)
+* [Ubuntu 16.04 搭建 LNMP 开发环境](https://blog.meathill.com/tech/serverside/setting-lnmp-on-ubuntu-16-04.html)
+* [程序员如何优雅的挣零花钱？](https://github.com/easychen/howto-make-more-money)
