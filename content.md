@@ -219,7 +219,7 @@ Note:
 
 1. Tree shaking
 2. SSR
-3. `<script defer>` 和 `<script async>`
+3. `defer` 和 `async`
 4. 按需加载模块
 
 <!-- section -->
