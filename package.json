@@ -27,19 +27,16 @@
     "gulp": "^4.0.0",
     "gulp-stylus": "^2.7.0",
     "marked": "^0.4.0",
-    "reveal-markdown-compiler": "^2.2.1",
-    "uglifyjs-webpack-plugin": "^1.2.7",
-    "webpack": "^4.16.5",
-    "webpack-cli": "^3.1.0"
+    "reveal-markdown-compiler": "^2.2.3",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "gulp-clean-css": "^3.9.4",
-    "highlight.js": "^9.12.0",
+    "gulp-clean-css": "^3.10.0",
+    "highlight.js": "^9.14.2",
     "meathill-reveal-theme": "^0.2.2",
     "reveal.js": "^3.7.0"
-  },
-  "optionalDependencies": {
-    "live-server": "^1.2.0"
   }
 }
