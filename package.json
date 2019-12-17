@@ -19,17 +19,15 @@
   "homepage": "https://meathill-lecture.github.io/",
   "license": "(CC-BY-NC-ND-4.0 OR MIT)",
   "devDependencies": {
-    "del": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-stylus": "^2.7.0",
     "reveal-markdown-compiler": "^2.2.6",
-    "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3"
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "gulp-clean-css": "^3.10.0",
-    "highlight.js": "^9.14.2",
+    "highlight.js": "^9.17.1",
     "meathill-reveal-theme": "^0.2.2",
     "reveal.js": "^3.7.0"
   }
