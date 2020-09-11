@@ -22,12 +22,11 @@
     "gulp": "^4.0.2",
     "gulp-stylus": "^2.7.0",
     "reveal-markdown-compiler": "^2.2.6",
-    "webpack": "^4.43.0",
+    "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "font-awesome": "^4.7.0",
-    "highlight.js": "^10.1.1",
+    "highlight.js": "^10.2.0",
     "meathill-reveal-theme": "^0.2.2",
     "reveal.js": "^4.0.2"
   }
